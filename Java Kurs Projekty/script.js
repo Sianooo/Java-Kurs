@@ -589,3 +589,54 @@
 // // dog.sound();
 // // console.log(dog);
 
+
+//OBEJCT ASSIGN:
+// const user={
+//     name:'Lily',
+//     age:23
+// }
+// const pet={
+//     name:'Drops',
+//     type:"dog"
+// }
+
+// const userInfo=Object.assign({},user,pet)//zawsze z przodu dajemy pusty obiekt {}
+// console.log(userInfo);
+// const userCopy=Object.assign({},user)//nadpisywanie objektow
+// userCopy.age=25
+// console.log(userCopy);
+
+//DESTRUKTURYZACJA:
+
+// const person={
+//     name:'Lily',
+//     age:25,
+//     job:'DJ',
+//     car:{
+//         brand:'Dodge',
+//         model:"Viper"
+//     }
+// }
+
+// const showInfo=({name,age,job})=>{
+//     // const {name,age,job}=person//dzieki temu:
+//     console.log(`${name} parcuje jako ${job} i ma ${age} lata.`);//wtedy mozna to tak zapisac 
+//     // console.log(`${person.name} parcuje jako ${person.job} i ma ${person.age} lata.`);
+// }
+// // showInfo()
+// showInfo(person)
+
+// const showInfo2 = ({car:{brand,model}}) => {
+// console.log(`Jej samochod to : ${brand} ${model}`);
+// }
+// showInfo2(person)
+
+// const colors=['red','green','blue']
+// const firstColor=colors[0]
+// const secondColor=colors[1]
+
+// const [first,second]=colors
+
+// console.log(firstColor,secondColor);
+// console.log(first,second);
+
