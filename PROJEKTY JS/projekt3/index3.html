@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style3.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Montserrat:400,700&display=swap&subset=latin-ext"
+    rel="stylesheet">
+    <title>Walidator formularza</title>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <form>
+            <h1>Zajerestruj sie</h1>
+            <div class="form-box">
+                <label for="username">Nazwa uzytkownika:</label>
+                <input type="text" id="username" placeholder="Podaj nazwe uzytkownika">
+                <p class="error-text">Error</p>
+            </div>
+            <div class="form-box">
+                <label for="password">Haslo:</label>
+                <input type="password" id="password" placeholder="Podaj haslo">
+                <p class="error-text">Error</p>
+            </div>
+            <div class="form-box">
+                <label for="password2">Powtorz haslo:</label>
+                <input type="password" id="password2" placeholder="Powtorz haslo">
+                <p class="error-text">Error</p>
+            </div>
+            <div class="form-box">
+                <label for="email">Adres e-mail:</label>
+                <input type="email" id="email" placeholder="Podaj adres mailowy">
+                <p class="error-text">Error</p>
+            </div>
+            <div class="control-buttons">
+                <button class="clear">Wyszysc</button>
+                <button class="send">Wyslij</button>
+            </div>
+            <div class="popup">
+                <p>Formularz zostal poprawnie wyslany</p>
+                <button class="close">Zamknij</button>
+            </div>
+        </form>
+    </div>
+    <script src="script3.js"></script>
 </body>
 </html>
