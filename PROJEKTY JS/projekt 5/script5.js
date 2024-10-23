@@ -52,7 +52,7 @@ const handleReset = () => {
     clearStuff()
 }
 
-const clearStuff = (params) => {
+const clearStuff = () => {
     clearInterval(countTime)
     stopWatch.textContent="0:00"
     timelist.textContent=''
