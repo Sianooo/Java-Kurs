@@ -21,5 +21,11 @@ const calculate = () => {
 currencyOne.addEventListener('change',calculate)
 currencyTwo.addEventListener('change',calculate)
 amountOne.addEventListener('input',calculate)//input aktualizuje na biezaco wartosc inputa
+swapBtn.addEventListener('click',()=>{
+    const temp=currencyOne.value
+    currencyOne.value=currencyTwo.value
+    currencyTwo.value=temp
+    calculate()
+})
 
 calculate()
